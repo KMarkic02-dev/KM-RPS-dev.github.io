@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Rock,Paper,Sissors</title>
+   <link rel="stylesheet" href='RPS.Css'>
+   
+</head>
+
+<body>
+    
+      <div class="Game-name"> 
+        ROCK/  <img class="Rocksss" src="./rock.png">  
+        PAPER/ <img class="Papersss" src="./page_facing_up.png">
+        SCISSORS <img class="Scissorsss" src="./scissors.png">
+      </div>
+      <div class="move-tracker-container">
+        <div class="moves-text PM"></div>
+        <div class="moves-text RES">LET'S PLAY</div>
+        <div class="moves-text CM"></div>
+      </div>
+     
+     
+      <div class="actions">
+          <button class="Rock.btn btn" onclick="playGame('Rock')"><img src="./rock.png"></button>
+
+          <button class="Paper.btn btn" onclick="playGame('Paper')"><img src="./page_facing_up.png"></button>
+
+          <button class="Scissors.btn btn" onclick="playGame('Scissors');"><img src="./scissors.png"></button>
+      </div>
+
+      <div class='score board '>SCORE
+        <div class="stats w">Win =</div><div class="stats wscore">0</div>
+        <div class="stats l">Lose = </div><div class="stats lscore">0</div>
+        <div class="stats t" >Tie = </div><div class="stats tscore">0</div>
+      </div>
+
+      <button class="Resetbutton" onclick="Reset('Reset_score')">RESET SCORE</button>
+
+
+
+  <script src='RPS.js'> </script>
+</body>
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,186 @@
+* 
+{
+  color: transparent;
+  background-color: rgb(57, 71, 71);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-color: beige;;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.Game-name {
+  height: 200px;
+  color: beige;
+  font-weight: 800;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 4px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.actions
+{  
+  grid-area: C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  border: 6px;
+  border-radius: 20px;
+  border-style: double;
+  border-color: beige;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transition: 200ms;
+}
+
+.btn:active {
+  opacity: 0.7;
+  border-color: rgb(30, 142, 233);
+  transition: 0ms;
+}
+
+.RES {letter-spacing: 5px;}
+
+.score {
+  grid-area: D;
+  color: rgb(255, 255, 255);
+  margin-top: 100px;
+  border: 4px;
+  border-style: solid;
+  width: 150px;
+  height: 200px;
+  border-color: beige;
+  border-radius: 20px;
+  border-style: double;
+  display: grid; 
+  grid-template-columns: 1fr,1fr;
+  grid-template-rows: 1fr,1fr,1fr,1fr;
+  grid-template-areas:
+  'Z Z'
+  'A D'
+  'B E'
+  'C F';
+  justify-content: center;
+  font-weight: 800;
+  letter-spacing: 4px;}
+
+.move-tracker-container {
+  grid-area: B;
+  width: 500px;
+  height: 45px;
+  border-color: beige;
+  border-radius: 20px;
+  border-style: dotted;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+ 
+}
+
+.moves-text{
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+.board {
+  margin-top: 0px;
+  grid-area: Z;
+  padding-top: 15px;
+}
+
+
+.Resetbutton {
+  grid-area: E;
+  margin-top: 20px;
+  border-color: rgba(255, 0, 0, 0.527);
+  background-color: rgba(255, 0, 0, 0.527);
+  border-radius: 20px;
+  color: beige;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 13px;
+  width: 130px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.Resetbutton:hover {
+  opacity: 0.9;
+  transition: 150ms;
+}
+.Resetbutton:active {
+  opacity: 0.5;
+}
+
+.Rocksss {
+  width: 30px;
+  position: absolute;
+  margin-bottom: 45px;
+  margin-right: 350px;
+  background-color: transparent;
+  rotate: 90deg;
+}
+.Papersss{
+  width: 30px;
+  position: absolute;
+  background-color: transparent;
+  margin-top: 55px;
+  margin-right: 80px;
+  rotate: 25deg;
+}
+
+.Scissorsss {
+  width: 30px;
+  position: absolute;
+  background-color: transparent;
+  margin-left: 400px;
+  margin-bottom: 25px;
+  rotate: 55deg;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.stats {
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.w {grid-area: A;}
+.l{grid-area: B;}
+.t{grid-area: C;}
+.wscore{ grid-area: D;}
+.lscore{ grid-area: E;}
+.tscore{ grid-area: F;}
